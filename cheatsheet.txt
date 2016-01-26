@@ -1,0 +1,5 @@
+-gedit: create a doc
+-git push: to conti
+-ls: check what elements there are in a folder
+-cd is to get into a folder
+
