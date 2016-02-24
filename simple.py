@@ -1,27 +1,30 @@
+import math
 def multiply(x):
-    b = x * 100
-    return b
+    a = x * 100
+    return a
 
-def kmultiply(y):
-    k = y * 60
-    return k 
+def bmultiply(y):
+    b = y * 60
+    return b 
 
-def add(z, k):
-    r = z + k
-    return r
+def add(a, b):
+    w = a + b
+    return w
 
-def output(name, b, k, r):
+def output(name, a, b, w):
     return """
 Hello there, {}!
-Did you know that you need this amount of pasta in grams to cook for your people:
+Did you know that you will need this amount of pasta in grams to cook for your people:
 {} + {} = {}
-""" .format(name, b, k, r)
+""" .format(name, a, b, w)
 
 def main():
     name = raw_input("Hello, what is your name?: ")
     x = raw_input("Okay. How many adults will be eating your spaghetti?: ")
     y = raw_input("How many kids will be eating your spaghetti?: ")
-    r = add(int(b), int(k))
-    print output(name, b, k, r)
+    a = multiply(int(x))
+    b = bmultiply(int(y))
+    w = add(int(a), int(b))
+    print output(name, a, b, w)
 
 main ()
