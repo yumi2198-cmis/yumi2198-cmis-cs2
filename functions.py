@@ -43,14 +43,18 @@ def area (a, b, c):
     s = (a + b + c) /2
     return (math.sqrt(float((s(s-a)(s-b)(s-c))))
 
-def right_align(a):
-    print(" "*80 - len(a))
+def right_align(word):
+    return str ((80-len(term))*" " + word)
 
-def center (a):
-    print (" "*40 - len(a))
+print right_align("Hello")
 
-def msg_box(txt):
-    return "+" + ((len(txt)+4)*"-") + "+" + "\n" + "|" + (txt) + (2*" ") + "|" + "\n" + "+" + ((len(txt) +4)*"-") + "+"
+def center (term):
+    return str ((40-len(term)*" " +term)
+
+print center("Hello")
+
+def msg_box(word):
+    return "+" + ((len(word)+4)*"-") + "+" + "\n" + "|" +  (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word) +4)*"-") + "+"
 
 a = add(3, 4)
 b = sub(5, 3)
