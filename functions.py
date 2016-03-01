@@ -35,32 +35,28 @@ def sphere_volume (a): #the variable represents the radius of a circle
 sphere_volume (5)
  
 def avg_volume (a, b): #the two variables show two distinct radius of two different circles
-    c = float(a/2)
-    d = float(b/2)
-    z = float(4/3)
-    return(((z)*math.pi*(c**3)) + ((z)*math.pi*(d**3)))#to find the average volume of two spheres, you need to find the volume of sphere 1 with the "a" variable and then the volume of sphere 2. Once done, you add the volumes of two different sphere together and then divide by 2 for the average number.
+    return ((((4/3))*math.pi*(a**3)) + ((4/3)*math.pi*(b**3))) / 2 #to find the average volume of two spheres, you need to find the volume of sphere 1 with the "a" variable and then the volume of sphere 2. Once done, you add the volumes of two different sphere together and then divide by 2 for the average number.
 
 avg_volume (10, 20)
 
 def area (a, b, c):
-    s = (a + b + c) /2
-    return (math.sqrt(float((s(s-a)(s-b)(s-c))))
+   return math.sqrt (2.75*(2.75-a)*(2.75-b)*(2.75-c))
 
-def right_align(a):
-    print(" "*80 - len(a))
+area (1.0, 2.0, 2.5)
+
+def right_align(word):
+    return str ((80-len(term))*" " + word)
 
 print right_align("Hello")
 
 def center (term):
-    return str ((40-len(term)*" " +term)
+    return str((40-len(term)*" " +term)
 
 print center("Hello")
 
-def msg_box(txt):
+def msg_box(word):
     return "+" + ((len(word)+4)*"-") + "+" + "\n" + "|" +  (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word) +4)*"-") + "+"
 
-print msg_box("Hello")
-print msg_box("I eat cats!")
 a = add(3, 4)
 b = sub(5, 3)
 c = mul(4, 4)
@@ -71,16 +67,3 @@ g = sphere_volume(5)
 h = avg_volume (10, 20)
 i = area(1, 2, 2.5)
 j = right_align ("Hello")
-k=center ("Hello")
-
-print msg_box(str(a))
-print msg_box(str(b))
-print msg_box(str(c))
-print msg_box(str(d))
-print msg_box(str(e))
-print msg_box(str(f))
-print msg_box(str(g))
-print msg_box(str(h))
-print msg_box(str(i))
-print msg_box(str(j))
-print msg_box(str(k))
