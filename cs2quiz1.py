@@ -48,8 +48,7 @@
 import math
 
 def diameter(a):
-	f = math.sqrt(a / (math.pi)) * 2
-	return f
+	return math.sqrt(a / (math.pi)) * 2
 
 def total(f, g, h):
 	d = f + g + h
