@@ -20,12 +20,13 @@ Your guess was {}.
 That's under by {}.
 """ .format(chosen, guess, under) 
 
-def output(chosen, guess, over):
+def output2(chosen, guess, over):
 	return """
 The target was {}
 Your guess was {}
 That's over by {}.
 """.format(chosen, guess, over) 
+
 def main():
 	num = raw_input("What is the minimum number?: ")
 	num2 = raw_input("What is the maximum number?: ")
@@ -38,6 +39,7 @@ def main():
 		under = subtract(int(chosen), int(guess))
 		print output (chosen, guess, under)
 	if int(guess) > int(chosen):
-		over = 
+		over = subtract(int(guess), int(chosen))
+		print output2 (chosen, guess, over)
 		
 main ()
