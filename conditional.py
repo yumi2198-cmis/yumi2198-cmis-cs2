@@ -6,7 +6,7 @@ def areacircle(a):
 	return circle 
 
 def areatriangle(a):
-	triangle = 1/2*a*4
+	triangle = (1/2*a)*4
 	return triangle
 
 def chosen(a, b):
@@ -58,10 +58,10 @@ def main():
 	userguess = raw_input("Now can you guess which number we chose?: ")
 	if int(userguess) < int(choose):
 		under = subtract(int(choose), int(userguess))
-		print wrongunder
+		print wrongunder (int(userguess), int(choose), int(under))
 	if int(userguess) > int(choose):
 		over = subtract(int(userguess), int(choose))
-		print wrongover
+		print wrongover (int(userguess), int(choose), int(over))
 	if int(userguess) == int(choose):
 		correct ()
 main()
