@@ -24,20 +24,20 @@
 # Then determine the values of the variables q1-q20.
 
 #a1 = 1 + function1(2, 5), 1+function1(2,4), 1+function1(2,3), 1+function1(2,2), 1 + function1(2,1), 2
-#a2 = 1 + function1(6, 1), 6
+#a2 = 8
 #a3 = -1
 
 #b1 = 2
-#b2 = 1 + function2(1, 0), 0
-#b3 = 1 + function2(-1, 4), 1+function2(0,0), 0
+#b2 = 2
+#b3 = 4
 
-#c1 = 1+function3(-2,2), function3(-2,1), =1+function3(-2,0), 0
+#c1 = -2
 #c2 =4
-#c3 = 10+function2(5,4), 9+Function3(5,3), 8+function3(5,2), 7+function(5,1), 6+function3(5,0), 5
+#c3 = 45
 
 #d1 =6
-#d2 = 1+function3(3,1,3), 7
-#d3 =1-function4(2,2,1), 1-function(1,1,2), 4
+#d2 = 8
+#d3 =4
 
 #Section 3: Programming
 #Write a script that asks the user to enter a series of numbers.
@@ -48,17 +48,15 @@
 #It is NOT NECESSARY to print out a running total with each user input.
 import math
 
-def done(num):
-	if num % 2 == 1:
-		
-	print "The average sum of your odd numbers is" 
-def series(num):
+def average(num):
+	num = raw_input("Next: ")
 	if num == "":
-		return done(num)
+		return done(num) #base case
 	else:
-		series(num)
-
+		num = float(num) #recursive case
+		if n % 2 == 1:
+		return avg(n)
 def main():
 	num = raw_input("Next: ")
-	series(num)
+	print "The average of all your odd numbers was " +float(avg) + "."
 main()
