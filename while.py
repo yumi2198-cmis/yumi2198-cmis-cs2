@@ -23,10 +23,19 @@ def addodds(n):
 	total = 0
 	while n > 0:
 		n -= 1
-		if n % 2 != 1:
+		if n % 2 == 1:
 			total += int(n)
-			print "Sum: {}".format(total)
+	return "Sum: {}".format(total)
 			
+	
+print addodds(5)
 
-addodds(5)
-			
+def dots(h, k):
+	out = " " 
+	x = 0
+	while x < h:
+		out += "."
+		x += 1
+	
+
+dots(5,10)	
