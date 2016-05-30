@@ -1,5 +1,5 @@
 import random
-#Eat at a French restaurant with the choices of Kimbab and Soup. If you don't like any, you can leave.
+#Eat at a Korean restaurant with the choices of Kimbab and Soup. If you don't like any, you can leave.
 
 def start(hello):
     if hello == "Hi!":
@@ -22,11 +22,11 @@ def getready(car):
 def pet(namess):
     if namess == "Dog":
         print "You're bringing a dog."
-    elif namess == "Cat":
+    elif namess == "Cat" or namess == "cat":
         print "You're bringing a cat with you."
     else:
         namess == "Rabbit"
-        print "You chose a rabbit."
+        return "You chose a rabbit."
     
 def hunger(decision):
     if decision == "yes":
@@ -57,7 +57,9 @@ def drinkchoice(surprise):
     print surprise2
     if surprise2 > random.randint(1, 10):
         print "You got a bottle of water!"
-    else: 
+	elif surprise2 < random.randint(1, 10):
+		print "You are getting nothing!"
+	else: 
         print "You got a soju!"
 
 def output(car, namess):
